@@ -45,7 +45,9 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin-bottom: 20px;
+            max-width: 400px; /* Set a maximum width for the map containers on small screens */
+            margin: 0 auto; /* Center the map containers */
+            overflow: hidden; /* Hide horizontal overflow */
         }
 
         .map-container h1 {
@@ -61,7 +63,6 @@
 
         .map-container iframe {
             width: 100%;
-            max-width: 400px;
             height: 300px;
             border: 0;
         }
