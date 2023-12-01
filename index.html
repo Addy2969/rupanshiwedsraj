@@ -45,9 +45,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            max-width: 400px; /* Set a maximum width for the map containers on small screens */
-            margin: 0 auto; /* Center the map containers */
-            overflow: hidden; /* Hide horizontal overflow */
+            overflow-x: hidden;
         }
 
         .map-container h1 {
@@ -55,10 +53,8 @@
         }
 
         .map-container div {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
             margin-top: 10px;
+            width: 100%; /* Ensure full width for each map container on small screens */
         }
 
         .map-container iframe {
@@ -75,10 +71,10 @@
 
             .map-container div {
                 margin-top: 0;
+                width: auto; /* Reset width for larger screens */
             }
         }
     </style>
-
 
     </head>
 
